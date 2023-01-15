@@ -40,7 +40,7 @@ a{
 
 .primary-text-style{
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 26px;
   color: var(--gray);
   padding: 1.3rem 0px;
@@ -48,11 +48,14 @@ a{
 
 .primary-title-style{
   font-weight: 700;
-  font-size: 45px;
+  font-size: 2.8rem;
   line-height: 53px;
   color: var(--black);
 }
 
+.ham-burger{
+  display: none;
+}
 /* header section */
 header{
   background: rgba(255, 144, 14, 0.1);
@@ -86,7 +89,7 @@ nav a{
 }
 .hero-content h1{
   font-weight: 700;
-  font-size: 64px;  
+  font-size: 4rem;  
   text-align: center;
   color: var(--black);
 }
@@ -253,6 +256,8 @@ h5{
 
 .brands{
   justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .brands img{
     width: 160px;
@@ -297,4 +302,73 @@ h5{
 }
 .review h5{
   font-size: 30px;
+}
+
+
+
+/* responsive css */
+
+/* media quries for movile  */
+@media only screen and (max-width: 576px) {
+  .flex{
+    flex-direction: column;
+  }
+  .hero-content {
+    width: auto;
+  }
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  nav {
+    display: none;
+  }
+  .logo h3 {
+    font-size: 2.2rem;
+  }
+  .ham-burger{
+    display: block;
+  }
+  .menu-bar {
+    flex-direction: row;
+  }
+  .features-section {
+    margin: 5rem 0;
+  }
+  .image-grid, .features-content, .experience-content, .features, .review, .experience-img, .facts-content, .testimonial-content, .sponsore-content {
+    width: 100%;
+  }
+
+  .experience-img img {
+    height: auto;
+  }
+  .experience-img .btn {
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .experience-img h2 {
+    font-size: 25px;
+    padding: 0px;
+  }
+  .expericence-section {
+    gap: 100px;
+  }
+
+  .primary-title-style {
+    font-size: 2.3rem;
+  }
+
+  .brands img {
+    width: 125px;
+  }
+  .brands.flex {
+    flex-direction: row;
+  }
+  .footer p {
+    font-size: 1rem;
+  }
+  .sponsore-content {
+    padding-top: 0px;
+  }
 }
