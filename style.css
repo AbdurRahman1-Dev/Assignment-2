@@ -152,6 +152,7 @@ nav a{
   justify-content: space-between;
   align-items: flex-start;
   gap: 200px;
+  margin: 130px 0px;
 }
 
 .experience-content h3{
@@ -200,3 +201,37 @@ nav a{
   font-size: 45px;
   padding: 5px 0px;
 }
+
+
+
+/* facts section */
+
+.facts-content{
+  width: 550px;
+}
+
+.facts-list{
+  justify-content: space-evenly;
+  margin: 70px 40px;
+}
+
+.facts{
+  width: 230px;
+  height: 230px;
+  border: 1px solid #FF900E;
+  padding: 45px 20px;
+  text-align: center;
+}
+
+.facts h3{
+  font-weight: 600;
+  font-size: 45px;;
+  color: #424242;
+  padding: 10px 0px;
+}
+
+.facts p{
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--gray);
+  }
